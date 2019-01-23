@@ -1,0 +1,54 @@
+body {
+	font-family: $font-sans; 	
+	color: $color-rain;
+}
+
+h1 {
+	font-family: $font-script;
+	font-size: 6rem;
+	color: $color-cadetblue;
+}
+
+h2.section {
+	color: $color-blueblack;
+	font-size: 1.4rem;
+	line-height: 1.6rem;
+}
+
+h3 {
+	font-size: 1.6rem;
+	color: $color-cadetblue;
+}
+
+h4 {
+	font-size: 1.1rem;
+	color: $color-greenery;
+	margin: 0;
+}
+
+.subhead {
+	font-size: 1.5rem;
+	color: $color-greenery;
+	margin: 1rem 0;
+}
+
+video, img {
+	max-width: 100%;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
