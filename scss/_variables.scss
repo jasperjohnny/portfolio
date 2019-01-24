@@ -3,6 +3,23 @@
     src: url("/assets/fonts/selima_.otf") format("opentype");
 }
 
+@font-face {
+    font-family: 'amaticbold';
+    src: url('/assets/fonts/amatic-bold-webfont.woff2') format('woff2'),
+         url('/assets/fonts/amatic-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'amatic_scregular';
+    src: url('/assets/fonts/amaticsc-regular-webfont.woff2') format('woff2'),
+         url('/assets/fonts/amaticsc-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,600');
 
 $color-blueblack: #021C1E;
@@ -10,5 +27,6 @@ $color-cadetblue: #004445;
 $color-rain: #2C7873;
 $color-greenery: #6FB98F;
 
-$font-script: 'Selima';
+// $font-script: 'Selima';
+$font-script: 'amatic_scregular';
 $font-sans: 'Open Sans', sans-serif;

@@ -1213,19 +1213,29 @@ a.text-dark:hover, a.text-dark:focus { color: #1d2124 !important; }
 .text-hide { font: 0/0 a; color: transparent; text-shadow: none; background-color: transparent; border: 0; }
 
 @font-face { font-family: Selima; src: url("/assets/fonts/selima_.otf") format("opentype"); }
-body { font-family: "Open Sans", sans-serif; color: #2C7873; }
+@font-face { font-family: 'amaticbold'; src: url("/assets/fonts/amatic-bold-webfont.woff2") format("woff2"), url("/assets/fonts/amatic-bold-webfont.woff") format("woff"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'amatic_scregular'; src: url("/assets/fonts/amaticsc-regular-webfont.woff2") format("woff2"), url("/assets/fonts/amaticsc-regular-webfont.woff") format("woff"); font-weight: normal; font-style: normal; }
+body { font-family: "Open Sans", sans-serif; color: #2C7873; transition: 1s; }
 
-h1 { font-family: "Selima"; font-size: 6rem; color: #004445; }
+h1 { font-family: "amatic_scregular"; font-size: 6rem; color: #004445; }
 
 h2.section { color: #021C1E; font-size: 1.4rem; line-height: 1.6rem; }
 
-h3 { font-size: 1.6rem; color: #004445; }
+h3 { font-size: 3rem; color: #004445; font-family: "amatic_scregular"; }
 
 h4 { font-size: 1.1rem; color: #6FB98F; margin: 0; }
 
 .subhead { font-size: 1.5rem; color: #6FB98F; margin: 1rem 0; }
 
 video, img { max-width: 100%; }
+
+.bordered { border: 1px solid #DDD; }
+
+.gogrey { background-color: #fdfdfd; }
+
+.myelomastars { background-color: rgba(239, 107, 17, 0.2); }
+
+.terrier { background-color: rgba(173, 238, 33, 0.2); }
 
 /* ========================================================================== EXAMPLE Media Queries for Responsive Design. These examples override the primary ('mobile first') styles. Modify as content requires. ========================================================================== */
 @media only screen and (min-width: 35em) { /* Style adjustments for viewports that meet the condition */ }

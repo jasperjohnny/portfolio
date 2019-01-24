@@ -1,6 +1,7 @@
 body {
 	font-family: $font-sans; 	
 	color: $color-rain;
+	transition: 1s;
 }
 
 h1 {
@@ -16,8 +17,9 @@ h2.section {
 }
 
 h3 {
-	font-size: 1.6rem;
+	font-size: 3rem;
 	color: $color-cadetblue;
+	font-family: $font-script;	
 }
 
 h4 {
@@ -35,6 +37,15 @@ h4 {
 video, img {
 	max-width: 100%;
 }
+
+.bordered {
+	border: 1px solid #DDD
+}
+
+.gogrey { background-color: #fdfdfd; }
+.myelomastars { background-color: rgba(239,107,17,0.2); }
+.terrier { background-color: rgba(173,238,33,0.2); }
+
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
