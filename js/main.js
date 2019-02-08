@@ -6,8 +6,10 @@ function runOnScroll() {
     	document.body.className = "myelomastars";
 	}
 	if (scrollPos > 800) {
+    	document.body.className = "aizle";
+	}
+	if (scrollPos > 1500) {
     	document.body.className = "terrier";
 	}
-
 } 
 window.addEventListener("scroll", runOnScroll)

@@ -22,10 +22,27 @@
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,600');
 
+
 $color-blueblack: #021C1E;
 $color-cadetblue: #004445;
 $color-rain: #2C7873;
 $color-greenery: #6FB98F;
+
+.color-rain { color: $color-rain; }
+.bg-rain { background-color: $color-rain; }
+
+.color-blueblack { color: $color-blueblack; }
+.bg-blueblack { background-color: $color-blueblack; }
+
+.color-cadet { color: $color-cadetblue; }
+.bg-cadet { background-color: $color-cadetblue; }
+
+.color-greenery { color: $color-greenery; }
+.bg-greenery { background-color: $color-greenery; }
+
+.color-white { color: #FFF; } 
+.bg-white { background-color: #FFF; 
+}
 
 // $font-script: 'Selima';
 $font-script: 'amatic_scregular';

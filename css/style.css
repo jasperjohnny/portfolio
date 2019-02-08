@@ -1215,9 +1215,30 @@ a.text-dark:hover, a.text-dark:focus { color: #1d2124 !important; }
 @font-face { font-family: Selima; src: url("/assets/fonts/selima_.otf") format("opentype"); }
 @font-face { font-family: 'amaticbold'; src: url("/assets/fonts/amatic-bold-webfont.woff2") format("woff2"), url("/assets/fonts/amatic-bold-webfont.woff") format("woff"); font-weight: normal; font-style: normal; }
 @font-face { font-family: 'amatic_scregular'; src: url("/assets/fonts/amaticsc-regular-webfont.woff2") format("woff2"), url("/assets/fonts/amaticsc-regular-webfont.woff") format("woff"); font-weight: normal; font-style: normal; }
-body { font-family: "Open Sans", sans-serif; color: #2C7873; transition: 1s; }
+.color-rain { color: #2C7873; }
 
-h1 { font-family: "amatic_scregular"; font-size: 6rem; color: #004445; }
+.bg-rain { background-color: #2C7873; }
+
+.color-blueblack { color: #021C1E; }
+
+.bg-blueblack { background-color: #021C1E; }
+
+.color-cadet { color: #004445; }
+
+.bg-cadet { background-color: #004445; }
+
+.color-greenery { color: #6FB98F; }
+
+.bg-greenery { background-color: #6FB98F; }
+
+.color-white { color: #FFF; }
+
+.bg-white { background-color: #FFF; }
+
+body { font-family: "Open Sans", sans-serif; color: #2C7873; transition: .3s; }
+
+h1 { font-family: "amatic_scregular"; color: #004445; font-size: 4rem; }
+@media (min-width: 768px) { h1 { font-size: 6rem; } }
 
 h2.section { color: #021C1E; font-size: 1.4rem; line-height: 1.6rem; }
 
@@ -1225,7 +1246,8 @@ h3 { font-size: 3rem; color: #004445; font-family: "amatic_scregular"; }
 
 h4 { font-size: 1.1rem; color: #6FB98F; margin: 0; }
 
-.subhead { font-size: 1.5rem; color: #6FB98F; margin: 1rem 0; }
+.subhead { color: #6FB98F; margin: 1rem 0; font-size: 1.2rem; }
+@media (min-width: 768px) { .subhead { font-size: 1.5rem; } }
 
 video, img { max-width: 100%; }
 
@@ -1237,8 +1259,12 @@ video, img { max-width: 100%; }
 
 .terrier { background-color: rgba(173, 238, 33, 0.2); }
 
-/* ========================================================================== EXAMPLE Media Queries for Responsive Design. These examples override the primary ('mobile first') styles. Modify as content requires. ========================================================================== */
-@media only screen and (min-width: 35em) { /* Style adjustments for viewports that meet the condition */ }
-@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) { /* Style adjustments for high resolution devices */ }
+.wildcat { background-color: rgba(118, 59, 204, 0.2); }
+
+.aizle { background-color: rgba(181, 2, 0, 0.2); }
+
+.tbe { background-color: rgba(2, 12, 11, 0.2); }
+
+.profile img { border-radius: 50%; max-width: 150px; }
 
 /*# sourceMappingURL=style.css.map */

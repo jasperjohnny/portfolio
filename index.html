@@ -12,14 +12,20 @@
 </head>
 
 <body>
-    <div class="container">
-        <header class="text-center">
+    <header class="text-center">
+        <div class="container">
             <h1 class="mt-4 mb-1">John Klingler</h1>
-            <p class="subhead mt-0">I build websites and manage development teams.<br />
-            Hooray for speed and simplicity.</p>   
-        </header>
-        <main>
-            <h2 class="section mt-5 text-center"><img src="/assets/icons/octopus.png" width="30"><br />WORK</h2>
+            <p class="subhead mt-0">
+                <!-- Web development, digital strategy, user experience, team lead.  -->
+                Pretty good at websites and not too shabby with digital strategy.<br class="d-none d-md-inline" />
+                Knows a thing or two about user experience.
+            <!-- I build websites and manage development teams.<br class="d-none d-md-inline" />
+            Hooray for speed and simplicity. --></p>   
+        </div>
+    </header>
+    <main>
+        <div class="container home-touts">
+            <h2 class="section mt-5 text-center"><img src="/assets/icons/octopus.png" width="30" alt="octopus icon"><br />WORK</h2>
             <div class="row">
                 <div class="col-md-6 p-4">
                     <a href="uma">
@@ -29,27 +35,27 @@
                         </video>
                     </a>
                     <h3 class="mb-1 mt-3">Ultimate Medical Academy</h3>
-                    <h4>Website, UX, Conversion Optimization</h4>
+                    <h4>Website, UX, Conversion Rate Optimization</h4>
                 </div>  
                 <div class="col-md-6 p-4">
                     <a href="uma-lp"><img src="/assets/images/landing-pages-thumb.jpg" alt="landing page example image" class="bordered"></a>
-                    <h3 class="mb-1 mt-3">Ultimate Medical Academy</h3>
-                    <h4>Landing Pages, Static Site with Gatsby</h4>
+                    <h3 class="mb-1 mt-3">UMA Landing Pages</h3>
+                    <h4>Static Site with React.js and Gatsby.js</h4>
                 </div>
             </div>
-            <div class="row mt-4">
+            <div class="row mt-md-4">
                 <div class="col-md-6 p-4">
                     <a href=""><img src="/assets/images/zeman-womble.jpg" alt-"zeman womble website image" class="bordered"></a>
                     <h3 class="mb-1 mt-3">Zeman Womble, LLC</h3>
-                    <h4>Website, Static Site with Jekyll</h4>
+                    <h4>Static Site with Jekyll</h4>
                 </div>
                 <div class="col-md-6 p-4">
                     <a href=""><img src="/assets/images/hireed-solutions.jpg" alt-"hire ed solutions website image" class="bordered"></a>
-                    <h3 class="mb-1 mt-3">Hire Ed Solutions</h3>
-                    <h4>Website, Wordpress</h4>
+                    <h3 class="mb-1 mt-3">UMA Partner Sites</h3>
+                    <h4>Wordpress Custom Themes, Client Management</h4>
                 </div>
             </div>
-            <div class="row mt-4">
+            <div class="row mt-md-4">
                 <div class="col-md-6 p-4">
                     <a href=""><img src="/assets/images/american-univ.jpg" alt-"american univeristy website image" class="bordered"></a>
                     <h3 class="mb-1 mt-3">American University</h3>
@@ -61,14 +67,43 @@
                     <h4>Multiplayer Game, Community Management</h4>
                 </div>
             </div>
-            <h2 class="section mt-5 mb-4 text-center"><img src="/assets/icons/rhinoceros.png" width="30"><br />TESTIMONIALS</h2>
-            <div class="row">
-                <div class="col-3"></div>
-                <div class="col-3"></div>
-                <div class="col-3"></div>
+            <h2 class="section mt-5 mb-4 text-center"><img src="/assets/icons/bird.png" width="40" alt="bird icon"><br />RECOMMENDATIONS</h2>
+            <div class="row text-center">
+                <div class="col-md-4 profile mb-5">
+                    <img src="/assets/images/eric.jpg">
+                    <p>"John walks the line between developer and project manager effortlessly. It is rare to find an individual who understands and excels and web development while also having great people skills, common sense and the ability to lead."</p>
+                    <p><strong>Eric Eliseo-Martin</strong><br />Web Developer, Former Team Member</p>
+                </div>
+                <div class="col-md-4 profile mb-5">
+                    <img src="/assets/images/dan.jpg">
+                    <p>"Not only is John a highly talented technologist with broad skills ranging from infrastructure to mobile to web and beyond; John is a talented strategist that helped shape our marketing technology road map. He is a great mentor to junior staff and a go-to guy for getting things done and all things martech."</p>
+                    <p><strong>Dan Soshin</strong><br />Chief Operating Officer, Former Manager</p>
+                </div>
+                <div class="col-md-4 profile mb-5">
+                    <img src="/assets/images/nasser.jpg">
+                    <p>"John is one of those rare leaders whose deep intellect is matched only by his patience and understanding, and whose integrity shines throughout his professional and personal life. John isn’t just a brain to bounce ideas off of but he is a reliable shoulder to lean on."</p>
+                    <p><strong>Nasser Abouelazm</strong><br />Web Developer, Former Team Member</p>
+                </div>
             </div>
-        </main>
-    </div>
+            <div class="row text-center">
+                <div class="col my-3">
+                    <img src="/assets/icons/linkedin-filled.png" width="25" alt="external link icon"> <a class="color-cadet" href="https://www.linkedin.com/in/johnpklingler/">Read More Recommendations</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-cadet color-white mt-3 text-center">
+        <div class="container">
+            <div class="row pt-3 pb-4">
+                <div class="col-12">
+                    <p>Get in touch if you would like to work on exciting projects together.</p>
+                    <p>Github: <a href="https://github.com/jasperjohnny" target="_blank" class="color-white"><strong>jasperjohnny</strong></a><br /> 
+                    LinkedIn: <a href="https://www.linkedin.com/in/johnpklingler/" target="blank" class="color-white"><strong>johnpklingler</strong></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 </body>

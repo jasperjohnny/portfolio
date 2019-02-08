@@ -1,13 +1,16 @@
 body {
 	font-family: $font-sans; 	
 	color: $color-rain;
-	transition: 1s;
+	transition: .3s;
 }
 
 h1 {
 	font-family: $font-script;
-	font-size: 6rem;
 	color: $color-cadetblue;
+	font-size: 4rem;
+	@include media-breakpoint-up(md) { 
+		font-size: 6rem;
+	}
 }
 
 h2.section {
@@ -29,9 +32,13 @@ h4 {
 }
 
 .subhead {
-	font-size: 1.5rem;
 	color: $color-greenery;
 	margin: 1rem 0;
+	font-size: 1.2rem;
+	@include media-breakpoint-up(md) { 
+		font-size: 1.5rem;
+	}
+
 }
 
 video, img {
@@ -45,21 +52,12 @@ video, img {
 .gogrey { background-color: #fdfdfd; }
 .myelomastars { background-color: rgba(239,107,17,0.2); }
 .terrier { background-color: rgba(173,238,33,0.2); }
+.wildcat { background-color: rgba(118,59,204,0.2); }
+.aizle { background-color: rgba(181,2,0,0.2); }
+.tbe { background-color: rgba(2,12,11,0.2); }
 
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+.profile img {
+	border-radius: 50%;
+	max-width: 150px;
 }
 
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-}
