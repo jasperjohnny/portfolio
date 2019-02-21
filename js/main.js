@@ -1,4 +1,3 @@
-console.log("umm");
 function runOnScroll() {
 	let scrollPos = (document.documentElement.scrollTop > 0) ? document.documentElement.scrollTop : document.body.scrollTop;
 	document.body.className = "bg-gogrey";
