@@ -13,6 +13,18 @@ h1 {
 	}
 }
 
+.work {
+	header {
+		background-color: $color-cadetblue;
+	}
+	h1 {
+		padding: 1rem 0;
+		margin: 0;
+		font-size: 3rem;
+		color: #FFF;
+	}
+}
+
 h2.section {
 	color: $color-blueblack;
 	font-size: 1.4rem;
@@ -46,18 +58,16 @@ video, img {
 }
 
 .bordered {
-	border: 1px solid #DDD
+	border: 1px solid #DDD;
 }
-
-.gogrey { background-color: #fdfdfd; }
-.myelomastars { background-color: rgba(239,107,17,0.2); }
-.terrier { background-color: rgba(173,238,33,0.2); }
-.wildcat { background-color: rgba(118,59,204,0.2); }
-.aizle { background-color: rgba(181,2,0,0.2); }
-.tbe { background-color: rgba(2,12,11,0.2); }
 
 .profile img {
 	border-radius: 50%;
 	max-width: 150px;
+}
+
+.mobiles img {
+	border-radius: 5px;
+ 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 

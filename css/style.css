@@ -1235,10 +1235,25 @@ a.text-dark:hover, a.text-dark:focus { color: #1d2124 !important; }
 
 .bg-white { background-color: #FFF; }
 
+.bg-gogrey { background-color: #fdfdfd; }
+
+.bg-myelomastars { background-color: rgba(239, 107, 17, 0.2); }
+
+.bg-terrier { background-color: rgba(173, 238, 33, 0.2); }
+
+.bg-wildcat { background-color: rgba(118, 59, 204, 0.2); }
+
+.bg-aizle { background-color: rgba(181, 2, 0, 0.2); }
+
+.bg-tbe { background-color: rgba(2, 12, 11, 0.2); }
+
 body { font-family: "Open Sans", sans-serif; color: #2C7873; transition: .3s; }
 
 h1 { font-family: "amatic_scregular"; color: #004445; font-size: 4rem; }
 @media (min-width: 768px) { h1 { font-size: 6rem; } }
+
+.work header { background-color: #004445; }
+.work h1 { padding: 1rem 0; margin: 0; font-size: 3rem; color: #FFF; }
 
 h2.section { color: #021C1E; font-size: 1.4rem; line-height: 1.6rem; }
 
@@ -1253,18 +1268,8 @@ video, img { max-width: 100%; }
 
 .bordered { border: 1px solid #DDD; }
 
-.gogrey { background-color: #fdfdfd; }
-
-.myelomastars { background-color: rgba(239, 107, 17, 0.2); }
-
-.terrier { background-color: rgba(173, 238, 33, 0.2); }
-
-.wildcat { background-color: rgba(118, 59, 204, 0.2); }
-
-.aizle { background-color: rgba(181, 2, 0, 0.2); }
-
-.tbe { background-color: rgba(2, 12, 11, 0.2); }
-
 .profile img { border-radius: 50%; max-width: 150px; }
+
+.mobiles img { border-radius: 5px; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
 
 /*# sourceMappingURL=style.css.map */
