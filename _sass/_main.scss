@@ -21,7 +21,10 @@ h1 {
 		padding: 1rem 0;
 		margin: 0;
 		font-size: 3rem;
-		color: #FFF;
+	}
+	a {
+		color: #FFF;	
+		opacity: .9;	
 	}
 }
 
@@ -71,3 +74,10 @@ video, img {
  	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
+a.unadorned {
+	text-decoration: none;
+}
+
+.work header a {
+	&:hover { opacity: 1; }
+}
