@@ -4,40 +4,94 @@ layout: work
 ---
 
 <div class="container">
-    <h2 class="mb-2">Sharp League</h2>
-    <div class="row mb-3">
-    	<div class="col-6">
-	    	<p>Sharp League was an online wagering game that combined elements of fantasy sports and gambling into a tournament that you could play with your friends. It was my hobby project for five years, a source of great pride and fun, and also the reason for many long nights spent staring at code with the lights low to not awake the sleeping house.</p>
+	<h2 class="mb-2">Sharp League</h2>
+	<div class="row mb-3">
+		<div class="col-md-6">
+	    	<p>Sharp League was an online wagering game that combined elements of fantasy sports and gambling into a tournament that you could play with your friends. It was my hobby project for five years, a source of great pride and fun, and the cause of many long nights spent staring at code with the lights turned low to not wake the sleeping house. [<a href="https://github.com/jasperjohnny/sharp_league" target="_blank">View Repo</a>]</p>
 
-	    	<p>I am sometimes asked: How do I learn to program? My answer is always: just start something. Take an idea and try to realize it online. Make a website from scratch. It matters little what languages and frameworks you use &mdash; they all will get you there. You will learn so much by just doing it.</p> 
+	    	<p>The game was pretty simple. At the beginning of a season (like the NFL), each player would be given $2,000 in fake dollars. He or she would place bets in an online sportsbook all season long and see who won the most money at the end. Most people went bust; some won fantastic sums.</p> 
 
-	    	<p>Sharp League, at its height, had hundreds of players. This is not a huge number, but it was significant enough that I had to consider issues of scaling, automation, and community management. As the site got bigger, I got better as a programmer. Starting small was a blessing. The impetus to just "get it to work" was strong, and having live users was proper motivation.</p>
+	    	<p>At its height, Sharp League had a couple hundred players. This is not a huge number, but it was significant enough that I had to learn to be a real programmer. Taking an idea and trying to scale it makes you learn all sorts of new things &mdash; how to automate manual processes, how to optimize for performace, how to keep a community engaged and coming back.</p>
 
-	    	<img src="/assets/images/sharp/tournament-lobby.jpg" alt="tournament lobby page" class="bordered">
+	    	<p>To all young programmers or those newly interested in computers, my best advice is: just start something. Take an idea and try to get it to work. Make a website from scratch. Code a game or an app that does something someone might find interesting. It doesn't matter what languages or framework you use. The basic concepts are all the same. You'll learn so much by just doing it.</p> 
+
+	    	<p>Sharp League never made a single penny and died a quiet death. It is still one of the most rewarding things I have ever done.</p>
 
 	    </div>
-	    <div class="col-6">
+	    <div class="col-md-6">
 	    	<img src="/assets/images/sharp/tourneys.jpg" alt="tournament listing page" class="bordered">
-
-	    	<p>Although I hadn't read "The Lean Startup" at the time, we were certainly practicing the build-measure-learn feedback loop. Most good, new ideas came from the community -- either directly through feature requests or indirectly by paying attention to the message boards. There wasn't much research; it was more: try something, see if it works, ditch the failures quickly, while building on teh successes.</p>
+	    	<p class="mt-2"><em>Tournament Listing Page</em></p>
 	    </div>
 	</div>
-    <div class="row mb-3">
-    	<div class="col-6">
-	    	<p>Sharp League taught me how to be a proper programmer by forcing me to solve problems in real situations with immediate impact. The list of things I learned include:</p>
-	    	<ul>
-	    		<li>Object Oriented Programming - to better structure and resue code.</li>
-	    		<li>Model-View-Controller - to seperate concerns and make logic more explicit.</li>
-	    		<li>SQL Optimization - to speed up queries and travrse over large datasets.</li>
-	    		<li>Server Management - to just keep the damn site up and be aware or potential issues.</li>
-	    	</ul>
-	    	<p>Sharp League also taught me how to be a better UX designer by considering how to get players to take the actions that would enrich the gameplay for the community.</p>
+</div>
 
-	    	<img src="/assets/images/sharp/amazing-bet-ledger.jpg" alt="amazing bet ledger page" class="bordered">
+<div class="bg-myelomastars">
+	<div class="container">
+		<div class="row">
+		    <div class="col-md-6">
+				<img src="/assets/images/sharp/tournament-lobby-2.jpg" alt="tournament lobby page" class="bordered mt-4">
+	    		<p class="mt-2"><em>Tournament Lobby</em></p>
+		    </div>
+		    <div class="col-md-6">
+				<h3 class="mt-4">Technical Lessons Learned</h3>
+	    		<p><em>Coding and running your own site forces you to learn a bunch quickly:</em></p> 
+
+		    	<p><strong>Object Oriented Programming</strong> - After writing a bunch of spaghetti code you start to wonder if there is a better way.</p>
+		    	
+		    	<p><strong>Model-View-Controller</strong> - Additionally, Sharp League used <a href="http://framework-one.github.io/" target="_blank">FW/1</a> to seperate concerns and make logic more explicit.</p>
+		    	
+		    	<p><strong>SQL Optimization</strong> - I know it is fashionable to use an ORM, but to me it's worth the extra time to write SQL by hand.</p>  
+
+		    	<p><strong>Server Management</strong> - Not the easiest thing to just keep the damn site up and be aware or potential issues.</p>
+
+		    	<p><strong>PAAS</strong> - With a fair amount of traffic, you</p>
+
+		    	<p><strong>Authenication</strong> - User accounts and authenication are way more complicated than you realize until you have to do it. Storing passwords properly (with hashing and salting) and then devising a method to reset them is challening.</p>
+
+		    	<p><strong>Security</strong> - Speaking of security, any site with a form on it had an attack vector. Dealing with that will keep you up at night.</p>
+
+		    	<p><strong>Timezones</strong> - One day I decided the site should show you times in your local timezone. Easy, right? (no.) Go back and save every timestamped thing in UTC time and then run a conversion every time that timestamp is referreneced. Took me a week.</p>
+		    </div>
 		</div>
-		<div class="col-6">	
+	</div>
+</div>	
 
-	    	<img src="/assets/images/sharp/bet-history.jpg" alt="bet-history page" class="bordered">
-	    </div>
-    </div>
+<div class="container">	
+	<h3 class="mt-4">UI/UX Lessons Learned</h3>
+	<div class="row">
+		<div class="col-md-6">
+	    	<p><strong>No one cares how beautiful your code is.</strong> Just make things work. Clever solutions make no difference to users. It's better to bang out new features.</p>
+
+	    	<p><strong>Watch your users.</strong> Duh, I know. But it's worth repeating that people don't usually do what you expect and you won't anticipate how features will be used or misused. For example, at the beginning, bets were publically viewable by all. This led some people to delay bets until the last minute so others couldn't copy them. Realizing this, we added the option to "hide" a bet and everyone was happy.</p>   
+
+	    	<p><strong>Build-Measure-Learn.</strong> <a href="http://theleanstartup.com/principles" target="_blank">Not my idea</a>, but true. Try something, see if it works, ditch the failures, build on the successes. Don't spend all your time making things perfect. Make things fast and get feedback.</p>
+
+	    	<p><strong>Make it easy.</strong> If you want to encourage an action, make it as easy as possible. For exmaple, we had trouble designing a bulletin board that people would actually use. There were always too many steps. Then we made it like twitter&mdash;just an input box and a submit button. Then usage exploded.</p>    		
+		</div>
+		<div class="col-md-6">
+			<img src="/assets/images/sharp/profiles.jpg" alt="collage of profile photos" class="bordered mt-3">
+			<p class="mt-2"><em>Some user profile photos</em></p>
+		</div>
+	</div>
+</div>
+
+
+<div class="bg-wildcat">
+	<div class="container">	
+		<div class="row pt-5 pb-3">
+			<div class="col-md-6 pr-md-3">
+		    	<img src="/assets/images/sharp/bet-history.jpg" alt="bet-history page" class="bordered">
+		    	<p class="mt-2"><em>Bet History Page from March Madness</em></p>
+			</div>
+			<div class="col-md-3">
+				<img src="/assets/images/sharp/amazing-bet-ledger.jpg" alt="amazing bet ledger page" class="bordered">
+				<p class="mt-2"><em>Somebody got all these bets right on one day</em></p>
+			</div>
+			<div class="col-md-3">
+				<img src="/assets/images/sharp/patent-1.jpg" alt="patent diagram 1" class="bordered">
+				<img src="/assets/images/sharp/patent-2.jpg" alt="patent diagram 2" class="bordered mt-2">
+				<p class="mt-2"><em>Diagrams from a patent application that never got past provisional</em></p>
+			</div>
+		</div>
+	</div>
 </div>
