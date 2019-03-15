@@ -81,3 +81,36 @@ a.unadorned {
 .work header a {
 	&:hover { opacity: 1; }
 }
+
+
+.pickme {
+	opacity: .9;
+	transition: .3s;
+	&:hover {
+		border: 1px solid $color-rain;
+		opacity: 1;
+		cursor: pointer;
+	}
+	&.yessir {
+		opacity: 1;
+		border: 1px solid $color-rain;
+		&:hover { 
+			cursor: initial;
+			border: 1px solid $color-rain;
+		}
+	}
+	&.nosir {
+		opacity: .4;
+		&:hover { cursor: initial; }
+		border: 1px solid #DDD;
+	}
+}
+
+.hide { display: none; }
+.show { display: block; }
+.relative { position: relative; }
+
+#thewinneris { 
+	position: absolute; 
+	bottom: 0;
+}

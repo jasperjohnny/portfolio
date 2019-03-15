@@ -22,7 +22,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,600');
 
-
+$body-color: #fdfdfd;
 $color-blueblack: #021C1E;
 $color-cadetblue: #004445;
 $color-rain: #2C7873;
@@ -43,7 +43,7 @@ $color-greenery: #6FB98F;
 .color-white { color: #FFF; } 
 .bg-white { background-color: #FFF; }
 
-.bg-gogrey { background-color: #fdfdfd; }
+.bg-gogrey { background-color: $body-color; }
 .bg-myelomastars { background-color: rgba(239,107,17,0.2); }
 .bg-terrier { background-color: rgba(173,238,33,0.2); }
 .bg-wildcat { background-color: rgba(118,59,204,0.2); }
